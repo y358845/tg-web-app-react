@@ -9,6 +9,7 @@ import Form from "./components/Form/Form";
 
 function App() {
     const {onToggleButton, tg} = useTelegram();
+    ///текст для коммита
 
     useEffect(() => {
         tg.ready();
@@ -18,7 +19,6 @@ function App() {
       <div className="App">
             <Header />
            <Routes>
-       
                 <Route index element={<ProductList />}/>
                 <Route path={'form'} element={<Form />}/>
             </Routes>
